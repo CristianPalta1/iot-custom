@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/CristianPalta1/iot-custom.git/static/css/main.f855e6bc.css",
-    "main.js": "/CristianPalta1/iot-custom.git/static/js/main.80b06040.js",
+    "main.js": "/CristianPalta1/iot-custom.git/static/js/main.0691097f.js",
     "static/js/453.4bec3cea.chunk.js": "/CristianPalta1/iot-custom.git/static/js/453.4bec3cea.chunk.js",
     "static/media/logo.svg": "/CristianPalta1/iot-custom.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/CristianPalta1/iot-custom.git/index.html",
     "main.f855e6bc.css.map": "/CristianPalta1/iot-custom.git/static/css/main.f855e6bc.css.map",
-    "main.80b06040.js.map": "/CristianPalta1/iot-custom.git/static/js/main.80b06040.js.map",
+    "main.0691097f.js.map": "/CristianPalta1/iot-custom.git/static/js/main.0691097f.js.map",
     "453.4bec3cea.chunk.js.map": "/CristianPalta1/iot-custom.git/static/js/453.4bec3cea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.80b06040.js"
+    "static/js/main.0691097f.js"
   ]
 }
