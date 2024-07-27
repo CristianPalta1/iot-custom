@@ -6,11 +6,13 @@ function App() {
     <div className="App">
       <p>Holis</p>
       <p>Esta es una prueba</p>
-      <iframe
-        src="https://ipphonecamera.deskshare.com"
-        title="IP Phone Camera"
-        frameborder="0"
-      ></iframe>
+      <div className = "iframe-container">
+        <iframe
+          src="https://ipphonecamera.deskshare.com"
+          title="IP Phone Camera"
+          frameborder="0"
+        ></iframe>
+      </div>
     </div>
   );
 }
