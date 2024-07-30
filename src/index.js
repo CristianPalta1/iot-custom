@@ -11,15 +11,25 @@ const router = createHashRouter([
   {
     path: "/",
     element: <HomePage />,
+    children: [
+      {
+        path: "sensors",
+        element: <SensorsPage />,
+      },
+      {
+        path: "remote-control",
+        element: <RemotePage />,
+      },
+    ],
   },
-  {
-    path: "/sensors",
-    element: <SensorsPage />,
-  },
-  {
-    path: "/remote-control",
-    element: <RemotePage />,
-  },
+  // {
+  //   path: "/sensors",
+  //   element: <SensorsPage />,
+  // },
+  // {
+  //   path: "/remote-control",
+  //   element: <RemotePage />,
+  // },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
