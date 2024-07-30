@@ -5,31 +5,31 @@ import { Layout } from "./components/Layout";
 import { HomePage } from "./pages/Home";
 import { SensorsPage } from "./pages/Sensors";
 import { RemotePage } from "./pages/Remote";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { HashRouter , RouterProvider } from "react-router-dom";
 
-const router = createHashRouter([
+const router = HashRouter ([
   {
     path: "/",
     element: <HomePage />,
-    children: [
-      {
-        path: "sensors",
-        element: <SensorsPage />,
-      },
-      {
-        path: "remote-control",
-        element: <RemotePage />,
-      },
-    ],
+    // children: [
+    //   {
+    //     path: "sensors",
+    //     element: <SensorsPage />,
+    //   },
+    //   {
+    //     path: "remote-control",
+    //     element: <RemotePage />,
+    //   },
+    // ],
   },
-  // {
-  //   path: "/sensors",
-  //   element: <SensorsPage />,
-  // },
-  // {
-  //   path: "/remote-control",
-  //   element: <RemotePage />,
-  // },
+  {
+    path: "/sensors",
+    element: <SensorsPage />,
+  },
+  {
+    path: "/remote-control",
+    element: <RemotePage />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
