@@ -5,9 +5,9 @@ import { Layout } from "./components/Layout";
 import { HomePage } from "./pages/Home";
 import { SensorsPage } from "./pages/Sensors";
 import { RemotePage } from "./pages/Remote";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <HomePage />,
