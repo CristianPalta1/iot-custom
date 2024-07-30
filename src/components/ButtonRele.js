@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, set, } from "firebase/database";
 import { database } from "../utils/firebase-config";
+
+import "./styles/ButtonRele.scss";
 
 const RemoteControl = () => {
   const [releState, setReleState] = useState("off");

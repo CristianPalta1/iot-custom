@@ -1,0 +1,14 @@
+.home-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    h1{
+        font-size: 3rem;
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+}
