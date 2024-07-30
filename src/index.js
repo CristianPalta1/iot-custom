@@ -5,22 +5,12 @@ import { Layout } from "./components/Layout";
 import { HomePage } from "./pages/Home";
 import { SensorsPage } from "./pages/Sensors";
 import { RemotePage } from "./pages/Remote";
-import { HashRouter , RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const router = HashRouter ([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
-    // children: [
-    //   {
-    //     path: "sensors",
-    //     element: <SensorsPage />,
-    //   },
-    //   {
-    //     path: "remote-control",
-    //     element: <RemotePage />,
-    //   },
-    // ],
   },
   {
     path: "/sensors",
