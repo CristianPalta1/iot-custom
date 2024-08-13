@@ -1,0 +1,15 @@
+Parameters:
+  ExistingBucketName:
+    Type: String
+    Default: iot-custom-page
+    Description: "El nombre del bucket S3 existente que se usará"
+
+Resources:
+  DummyResource:
+    Type: AWS::CloudFormation::WaitConditionHandle
+    Properties: {}
+
+Outputs:
+  S3WebsiteURL:
+    Value: !Sub "http://${ExistingBucketName}.s3-website.${AWS::Region}.amazonaws.com"
+    Description: "URL del sitio web estático en S3"

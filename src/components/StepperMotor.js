@@ -1,11 +1,30 @@
-import React from "react";
-import { getDatabase, ref, set } from "firebase/database";
+import React, { useEffect, useState } from "react";
+import { getDatabase, ref, set, get } from "firebase/database";
 import { database } from "../utils/firebase-config";
 import "./styles/StepperControl.scss";
 
 const StepperControl = () => {
+  const [motorPosition, setMotorPosition] = useState(0);
+
+  useEffect(() => {
+    const remoteControlRef = ref(database, "remote_control/motor_direction");
+
+    get(remoteControlRef)
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          setMotorPosition(snapshot.val());
+        } else {
+          console.log("No data available");
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching state: ", error);
+      });
+  }, []);
+
   const handlePositionChange = (event) => {
-    const selectedPosition = +event.target.value;
+    const selectedPosition =
+      +event.target.value === 0 ? motorPosition : +event.target.value;
     const motorControlRef = ref(database, "remote_control/motor_direction");
 
     set(motorControlRef, selectedPosition)
